@@ -1,10 +1,13 @@
 # Factorial function. 
 
-def fact(n): 
+def fact(): 
 	''' Returns the factorial of n recursively '''
-	if n == 1: 
-		return 1
-	else: 
-		return n * fact(n-1)
-		
-print fact(5)
+	ret = 1
+	n = raw_input("Enter number: ")
+	num = int(n)
+	for i in range(num):
+		ret *= num
+		num -= 1
+	return ret	
+	
+print fact()
